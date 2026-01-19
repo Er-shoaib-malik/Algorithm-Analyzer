@@ -1,20 +1,150 @@
-<<<<<<< HEAD
-# React + Vite
+Algorithm Analyzer 🔍⚙️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive Algorithm Analyzer built using React.js that helps visualize, analyze, and compare algorithms based on performance metrics like execution time, comparisons, and swaps.
 
-Currently, two official plugins are available:
+This project bridges the gap between theoretical DSA concepts and real-world execution behavior through clear visualizations and metrics.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✨ Features
 
-## React Compiler
+🔢 Algorithm Visualization
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Step-by-step visualization of algorithms
 
-## Expanding the ESLint configuration
+Clear representation using animated bars
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
+📊 Performance Analysis
 
->>>>>>> 75b1cf5ef65de3b385d3cb0f312d46d1003186f8
+Execution time measurement
+
+Comparison count
+
+Swap count
+
+🎛️ Interactive Controls
+
+Select algorithm dynamically
+
+Generate new input arrays
+
+Control animation speed
+
+Start and reset execution
+
+📈 Scalable Design
+
+Easy to extend with more algorithms
+
+Modular and clean code structure
+
+🧠 Algorithms Implemented
+Sorting Algorithms
+
+Bubble Sort
+
+Selection Sort
+
+Insertion Sort
+
+(More algorithms like Binary Search, Graph Traversals, and Dynamic Programming will be added.)
+
+🛠️ Tech Stack
+
+Frontend: React.js
+
+Styling: CSS / Tailwind CSS
+
+State Management: React Hooks
+
+Performance Tracking: performance.now()
+
+Version Control: Git & GitHub
+
+📁 Project Structure
+src/
+ ├── algorithms/        # Algorithm logic with step tracking
+ ├── components/        # UI components (Controls, Visualizer, Metrics)
+ ├── utils/             # Helper functions
+ ├── App.jsx
+ └── index.js
+
+🚀 Getting Started
+1. Clone the repository
+git clone https://github.com/your-username/algorithm-analyzer.git
+
+2. Navigate to the project directory
+cd algorithm-analyzer
+
+3. Install dependencies
+npm install
+
+4. Run the application
+npm start
+
+
+The app will run at http://localhost:3000.
+
+📌 How It Works
+
+User selects an algorithm.
+
+A random input array is generated.
+
+Algorithm runs while recording:
+
+Comparisons
+
+Swaps
+
+Execution time
+
+Each step is animated in real-time.
+
+Metrics are displayed after execution.
+
+This makes it easy to see why some algorithms perform better than others.
+
+🎯 Why This Project?
+
+Strengthens understanding of Data Structures & Algorithms
+
+Demonstrates strong React fundamentals
+
+Shows ability to combine logic + UI + performance analysis
+
+Great portfolio project for software engineering roles
+
+🔮 Future Enhancements
+
+Add searching and graph algorithms
+
+Side-by-side algorithm comparison
+
+Chart-based performance analysis
+
+Step-by-step explanation panel
+
+Dark mode
+
+Backend for logging results
+
+🤝 Contributing
+
+Contributions, suggestions, and improvements are welcome.
+
+Fork the repository
+
+Create a feature branch
+
+Commit your changes
+
+Open a pull request
+
+📄 License
+
+This project is open source and available under the MIT License.
+
+👤 Author
+
+Shoaib
+B.Tech CSE Student
+Passionate about DSA, React, and building meaningful software
