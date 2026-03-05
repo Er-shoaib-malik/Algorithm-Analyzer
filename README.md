@@ -1,48 +1,4 @@
-<style>
-body{
-font-family: Arial, sans-serif;
-background:#0f172a;
-color:#e2e8f0;
-padding:40px;
-line-height:1.6;
-}
 
-h1,h2,h3{
-color:#38bdf8;
-}
-
-code, pre{
-background:#1e293b;
-padding:10px;
-border-radius:6px;
-display:block;
-overflow:auto;
-color:#22c55e;
-}
-
-table{
-border-collapse:collapse;
-width:60%;
-margin-top:10px;
-}
-
-th,td{
-border:1px solid #334155;
-padding:8px;
-text-align:left;
-}
-
-.section{
-margin-bottom:40px;
-}
-
-.flow{
-background:#020617;
-padding:15px;
-border-radius:8px;
-border:1px solid #334155;
-}
-</style>
 
 
 <h1>🚀 Algorithm Analyzer</h1>
