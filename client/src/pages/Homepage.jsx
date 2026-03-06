@@ -6,36 +6,10 @@ import Button from "../components/Button";
 import MagicBento from "../components/MagicBento";
 import Shuffle from "../components/Shuffle";
 import { useState } from "react";
+import ASKAI from "../components/ASKAI";
 
 const Homepage = () => {
-  const [aiQuestion, setAiQuestion] = useState("");
-  const [aiAnswer, setAiAnswer] = useState("");
-  const [aiLoading, setAiLoading] = useState(false);
 
-
-  const askAI = async () => {
-  if (!aiQuestion) return;
-
-  setAiLoading(true);
-  setAiAnswer("");
-
-  try {
-    const res = await fetch("http://localhost:5000/api/ask-ai", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ question: aiQuestion }),
-    });
-
-    const data = await res.json();
-    setAiAnswer(data.answer);
-  } catch (err) {
-    setAiAnswer("Something went wrong.");
-  }
-
-  setAiLoading(false);
-};
   return (
     <div className="relative min-h-screen overflow-hidden">
       {/* Aurora Background */}
@@ -59,29 +33,6 @@ const Homepage = () => {
         </main>
       </section>
 
-      <div className="w-full border border-white/10 bg-white/5 rounded-xl p-4 mt-6">
-        <span className="text-emerald-500 text-sm">// AI EXPLAINER</span>
-
-        <div className="flex gap-3 mt-4">
-          <input
-            className="border border-white/10 h-10 bg-white/5 rounded-xl w-[80%] px-3"
-            placeholder="Ask about complexity, best case, worst case..."
-            value={aiQuestion}
-            onChange={(e) => setAiQuestion(e.target.value)}
-          />
-
-          <button
-            onClick={askAI}
-            className="h-10 bg-purple-400/5 border border-purple-400/40 text-purple-400 px-4 rounded-xl"
-          >
-            Ask AI
-          </button>
-        </div>
-
-        <div className="mt-4 text-sm text-gray-300 whitespace-pre-wrap">
-          {aiLoading ? "Thinking..." : aiAnswer}
-        </div>
-      </div>
 
       <section
         id="Algorithm"
