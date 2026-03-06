@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Header } from "../components/Header";
 import Aurora from "../components/Background";
 import { Play, RefreshCcw, TimerReset } from "lucide-react";
-import { linearSearch } from "../algorithms/LinearSearch";
+import { linearSearch } from "../algorithms/linearsearch";
 
 const LinearSearch = () => {
   const [array, setArray] = useState([]);
