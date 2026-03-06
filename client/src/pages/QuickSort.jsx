@@ -3,7 +3,7 @@ import { Header } from "../components/Header";
 import Aurora from "../components/Background";
 import { useEffect } from "react";
 import { Play, RefreshCcw, TimerReset } from "lucide-react";
-import { quicksort } from "../algorithms/QuickSort";
+import { quicksort } from "../algorithms/quicksort";
 import { useAsyncError } from "react-router-dom";
 import { useRef } from "react";
 
