@@ -9,7 +9,8 @@ import QuickSort from "./pages/QuickSort" ;
 import LinearSearch from "./pages/LinearSearch";
 import BinarySearch from "./pages/BinarySearch";
 import ASKAI from "./components/ASKAI";
-import CTAFooter from "./components/Ctafooter";
+import CTAFooter from "./components/CTAfooter";
+import ScrollToTop from "./components/ScrollToTop";
 
 // Lazy load pages
 const Homepage = lazy(() => import("./pages/Homepage"));
@@ -18,6 +19,7 @@ function App() {
   return (
     <div className="poppins-regular">
       <BrowserRouter>
+      <ScrollToTop/>
         <Suspense fallback={<Loader />}>
           <Routes>
             <Route path="/" element={<><Homepage />\ <CTAFooter/></>} />
